@@ -1,0 +1,194 @@
+body{
+  overflow-x: hidden;
+  background: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+}
+.info__card h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+header {
+  padding: 20px 20px 0 0;
+  background: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.main-menu :hover {
+  border-bottom: 2px solid grey;
+  cursor: url("./Navigation/clicker.png"), auto;
+}
+
+.main-menu a {
+  float: left;
+  text-align: center;
+  font-family: "Lato-Bold";
+  font-size: 16pt;
+  color: black;
+  margin: 10px;
+  padding: 20px 14px 50px 100px;
+  margin-right: 120px;
+  text-decoration: none;
+}
+.main-menu{
+  float: right;
+}
+.logo__container {
+  width: 50%;
+  margin-left: 20px;
+}
+.cart__container {
+  width: 50%;
+}
+.cart__container ul{
+  float: right;
+  margin-right: 30px;
+}
+.submenu {
+  position: relative;
+  list-style-type: none;
+  width: 50%;
+}
+.submenu #cart{
+  display: none;
+}
+.submenu:hover #cart{
+  display: block;
+  position: absolute;
+  right:0;
+  top:100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+.vacio {
+  padding: 10px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.borrar-curso {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+#list-cursos {
+  padding: 30px 0;
+}
+.encabezado__cursos{
+  margin-bottom: 30px;
+}
+.cursos__container{
+  margin-top: 30px;
+  display: grid;
+  grid-gap: 25px;
+	max-width: 1080px;
+	margin: 0 auto;
+  padding: 0 10px;
+}
+.curso__item{
+  border: 1px solid rgba(0,0,0,0.25);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card__img, .imagen__curso{
+  width: 100%;
+}
+.info__card{
+  padding: 10px 10px;
+  position: relative;
+  height: 160px;
+}
+.info__card *{
+  margin-bottom: 10px;
+}
+.precio{
+  text-decoration: line-through;
+  color: red;
+}
+.discount{
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 1.25em;
+}
+.add-cart{
+  background: #00B2BD;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0;
+}
+.add-cart:hover{
+  background: #00828a;
+  color: white;
+}
+.fa{    margin-bottom: 0;}
+@media (min-width: 750px) {
+  header {
+    text-align: left;
+  }
+}
+
+@media (min-width: 472px) and (max-width: 767px) {
+  .cursos__container{
+    grid-template-columns: 1fr 1fr;
+   }
+ }
+ @media all and (min-width: 768px) {
+  .cursos__container{
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+ }
+ @media all and (min-width: 949px) {
+   .cursos__container{
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+ }
+ .footer {
+  width: 100%;
+  height: 15rem;
+  background-color: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-family: "Baloo Da 2", serif;
+  font-size: 1.6rem;
+  color: #a7a7a7;
+}
+
+.logout{
+  height: 5rem;
+  width: 16rem;
+  color: aliceblue;
+  font-size: 2rem;
+  font-family: caption;
+  text-shadow: #17181b;
+  margin-left: 100rem;
+  background: #00B2BD; 
+}

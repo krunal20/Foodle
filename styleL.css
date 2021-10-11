@@ -1,0 +1,533 @@
+/* trial starts here */
+
+
+
+/* trial ends here */
+
+
+
+
+/*leafia*/
+
+* {
+    box-sizing: border-box;
+  }
+
+
+.containerL {
+  position: relative;
+  font-family: Arial;
+  font-size: xx-large;
+  opacity: 0.80;
+}
+.text-block {
+  position: absolute;
+  bottom: 200px;
+  right: 260px;
+  float: center;
+  background-color: #024058c4;
+  color: white;
+ padding-left: 20px;
+  padding-right: 20px; 
+  
+}
+
+/* NAVBAR */
+
+/* styles back of navbar */
+.navbar{
+  overflow: hidden;
+  max-width: 100%;
+  background-color:rgb(56, 32, 95);
+  padding: 20px;
+  position: fixed;
+  padding-top: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+/* styles links of navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 200;
+  }
+
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+  }
+
+  
+
+.navbar a:hover {
+    background-color: rgb(191, 201, 54);
+    color: black;
+  }
+  
+
+
+/* BODY */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+  }
+
+
+.bodyStyle{
+    /* background: #d1e8f1e8; */
+    background: #000000;
+    padding:0px
+
+}
+
+
+/* MENU  */
+.menuText{
+  text-align:center;
+  color: white;
+}
+
+table, th, td {
+  border: 0px solid rgb(0, 0, 0);
+  width:750px
+  
+}
+
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FOOTER Style */
+  .footer{
+    padding: 10px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+     }
+
+
+
+.footerText{
+  
+    color: white;
+    font-size: large;
+}
+
+.footerButton {
+
+  background:linear-gradient(to bottom, #c74545 5%, #e3162b 100%);
+	background-color:#c74545;
+	border-radius:28px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 15px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+
+  } 
+  .footerButton:hover{
+    background:linear-gradient(to bottom, #e3c416 5%, #c7a945 100%);
+	 
+  }
+ .footerButton:active{
+  position:relative;
+  top:1px;
+  
+ }
+
+
+ .footerBar{
+     
+    overflow: hidden;
+    background-color:#333;
+    padding: 0px;
+ }
+
+ .footerBar a:hover{
+  background-color: #ddd;
+  color: black;
+
+ }
+
+ .footerBar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+ }
+
+
+
+  
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+.menuButton{
+  background-color:#23647ee8;
+  border: none;
+  color: white;
+  background: transparent;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  align-self:center ;
+  
+}
+
+.menuButton:hover{
+  transform: scale(1.5);
+}
+
+
+
+.clearButton{
+
+
+    background-color:#662525e8;
+    border: none;
+    color: white;
+    background-color: transparent;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+  }
+
+  .clearButton:hover{
+    animation:  shake 0.8s  ; 
+  } 
+  
+  @keyframes shake{ 
+    0%{ 
+      transform: translateX(0) 
+    } 
+    25%{ 
+      transform: translateX(25px); 
+    } 
+      
+    50%{ 
+      transform: translateX(-25px); 
+    } 
+    100%{ 
+      transform: translateX(0px); 
+    } 
+  } 
+
+  }
+
+
+  /* right frame  */
+.bgStyleRight{
+
+  background-color: rgb(0, 0, 0);
+  color: #ddd;
+}
+
+.quantity:clicked{
+  background-color: green;
+}
+
+
+
+
+/* //take you to the top button */
+
+.myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 0px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: gold; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 30px; /* Increase font size */
+  
+}
+
+.myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* test starts */
+
+html, body {
+  height: 100%;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gbutton {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #3b97a3;
+  text-align-last: center;
+  background: #063b2be8;
+/* background: linear-gradient(90deg, #23647ee8 0%,#23647ee8 100%); */
+  border: none;
+  border-radius: 1000px;
+  /* box-shadow: 12px 12px 24px rgba(79,209,197,.64); */
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.gbutton:before {
+  
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #33ccad;
+  /* box-shadow: 0 0 60px rgba(0,255,203,.64); */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.gbutton:hover, .button:focus {
+  color: #c4eeffe8;
+  transform: translateY(-6px);
+}
+
+.gbutton:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+.gbutton::after {
+ 
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #9bb9c5e8;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.gbutton:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.shakeUp.hover{
+  animation:  shake 1s  ; 
+  } 
+  
+  @keyframes shake{ 
+    0%{ 
+      transform: translateX(0) 
+    } 
+    25%{ 
+      transform: translateX(25px); 
+    } 
+      
+    50%{ 
+      transform: translateX(-25px); 
+    } 
+    100%{ 
+      transform: translateX(0px); 
+    } 
+  } 
+
+  }
+}
+
+
+
+/* on mouse hover the text is seen  */
+
+
+.imageContainerMenu {
+  position: relative;
+  
+}
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: 100%;
+  width: 100%; */
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.imageContainerMenu:hover .imageOverlay {
+  opacity: 1;
+}
+
+.imgText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* 
+.imageHover:hover{
+  transform: scale(1.3);
+  opacity: 0.8;
+ 
+} */
+
+
+
+
+.exampleScrollMain {
+ 
+ 
+  border: 0px dotted black;
+  overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.exampleScrollMain::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.exampleScrollMain {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+ 
+/* test  msg here */
+
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-buttonChat {
+  background-color: rgb(37, 10, 48);
+  color: rgb(248, 233, 149);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popupChat {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  /* border: 3px solid #161616; */
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-containerChat{
+  max-width: 300px;
+  padding: 10px;
+  background-color: #161616;
+}
+
+/* Full-width textarea */
+.form-containerChat textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-containerChat textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-containerChat .btnChat {
+  background-color: #4CAF50;
+  color: rgb(252, 252, 252);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-containerChat .cancelChat {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-containerChat .btnChat:hover, .open-buttonChat:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FOODLE BLOG</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css" />
+   
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-banner">
+        <div class="navigation">
+          <div class="logo">
+            <img style ="height: 7rem; width: = 7rem;" src="https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1413659156/eshiaj42iwtxgzcnpvfh.png" alt="logo" />
+          </div>
+          <div style="display:flex;" class="main-menu" id="main-menu1">
+            <a href="blog.html">FOODLEBLOG</a>
+            <a href="index.php">ABOUT US</a>
+            <a href="recipes.html">RECIPES</a>
+            <a href="menu.php">MENU</a>
+           
+          </div>
+          
+        </div>
+        <div class="content">
+          <div class="content-text">
+            <h1>
+              It`s time for <br />
+              Cooking
+            </h1>
+            <p>
+              Do you want to get something delicious, special <br />
+              and healty?We are sincerely for your service.<br />
+              Welcome your arrival!
+            </p>
+            <button onclick="window.location ='recipes.html'" class="go-to-recipe-btn">Go to recipes</button>
+          </div>
+
+          <div class="ilustration">
+            <img src="./HeroBaner/illustration.png" alt="logo" />
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div class="section-title">
+          <h2>We offer you Best & Delicious food</h2>
+          <p>
+            Cook.Serve.Eat.Enjoy.
+          </p>
+        </div>
+
+        <div class="tab">
+          <button
+            class="tablinks active"
+            onclick="onTablClick(event, 'Breakfast')"
+          >
+            1. Breakfast
+          </button>
+          <button class="tablinks" onclick="onTablClick(event, 'Lunch')">
+            2. Lunch
+          </button>
+          <button class="tablinks" onclick="onTablClick(event, 'Diner')">
+            3. Dinner
+          </button>
+        </div>
+
+        <div id="Breakfast" class="tabcontent" style="display:flex;">
+          <div class="tabclass">
+            <h3>
+              Our best<br />
+              Breakfast recipes.
+            </h3>
+            <p>
+              Breakfast is the most important meal of the day; choose from
+              homemade<br />waffles, granola, corned beef hash, pancakes,
+              omelets or cinnamon buns.<br /><br />
+              Jump start your day with these top-rated breakfast recipes.
+              Whether it’s<br />something savory or a little sweet, we’ve got
+              you covered with this nourishing<br />round up.
+            </p>
+            <button onclick="window.location ='brkfst.html'">Go to recipes</button>
+          </div>
+
+          <div class="breakfast-img">
+            <img
+              src="./Tabs/tab-content/breakfast-tab/illustration.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+
+        <div id="Lunch" class="tabcontent">
+          <div class="tabclass">
+            <h3>Our best<br />Lunch recipes</h3>
+            <p>
+              You have breakfast planned the night before, and your shopping for
+              dinner<br />was already done over the weekend. But what do you do
+              in-between the two?<br />Don't worry, we've got plenty of lunch
+              ideas to get you inspired.<br /><br />
+
+              With a wide range of lunch ideas like hearty soups, BBQ beef
+              sandwiches, and<br />adventurous tacos, you're sure to start
+              feeling the creativity flowing. Put<br />some pizzazz in your
+              midday munch with these delightful lunch ideas.
+            </p>
+            <button onclick = "window.location = 'lunch.html' ">Go to recipes</button>
+          </div>
+
+          <div class="breakfast-img">
+            <img
+              src="./Tabs/tab-content/lunch-tab/illustration.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+
+        <div id="Diner" class="tabcontent">
+          <div class="tabclass">
+            <h3>Our best<br />Diner recipes</h3>
+            <p>
+              Discover dinner recipes in almost every category imaginable. You
+              can choose<br />from chicken recipes, casserole recipes, veggie
+              side dishes, salads and<br />
+              oh-so-many more delectable dinner recipes.<br /><br />
+
+              Take the opportunity to expand your repertoire with this
+              collection of great<br />dinner recipes, from fast and simple to
+              Healthy Living, entertaining ideas or<br />cheesy comfort foods.
+              No matter which dinner recipes you are searching for
+            </p>
+            <button onclick="window.location ='dinner.html'">Go to recipes</button>
+          </div>
+          <div class="breakfast-img">
+            <img
+              src="./Tabs/tab-content/diner-tab/illustration.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+
+    
+      </div>
+
+      <div class="slider">
+        <div class="what-user-say">
+          <h4>What Our Users Say</h4>
+        </div>
+        
+          <div class="slide">
+            <div class="user">
+              <div class="user-pic">
+                <img src="./slider/user-pic/image.png" alt="logo" />
+              </div>
+              <div class="user-name">
+                <div class="user-name-name"><p>Krunal Doshi</p></div>
+                <div class="user-name-town"><p>MUMBAI, MAHARASHTRA</p></div>
+                
+              </div>
+            </div>
+            <div class="user-txt">
+              <p
+                >“They are the best.”</p
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="latest-recipes">
+        <div class="text-wraper-latest-recipes">
+          <div class="latest-recipe-txt">
+            <h2>Our latest recipes</h2>
+          </div>
+          <div class="show-recipes">
+            <a href="recipes.html">Show all recipes</a>
+          </div>
+        </div>
+
+        <div class="card-list">
+          <div class="card1">
+            <div class="card-pic">
+              <img src="./LatestRecipes/recipe1/recipe1.png" alt="logo" >
+            </div>
+            <div class="card-text">
+              <div class="recipe"><p>SNACKS</p></div>
+              <div class="recipe-name"><p>Spanish Tortila</p></div>
+            </div>
+            <div class="card-footer">
+              <div class="time">
+                <div class="cloack-logo">
+                  <img
+                    src="./LatestRecipes/recipe1/clock-icon.png"
+                    alt="logo"
+                  />
+                </div>
+                <div class="minutes-time"><p>20 - 30 min</p></div>
+              </div>
+              <div class="comment">
+                <div class="comend-number"><p>12</p></div>
+                <div class="comend-logo">
+                    <a href="https://tasty.co/">
+                        <img  alt="logo" src="./LatestRecipes/recipe1/comment-icon.png">
+                        </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="card-pic">
+              <img src="./LatestRecipes/recipe2/recipe2.png" alt="logo" />
+            </div>
+            <div class="card-text">
+              <div class="recipe"><p>BREAKFAST</p></div>
+              <div class="recipe-name">
+                <p>Healthy oaty fruity<br />cereal</p>
+              </div>
+            </div>
+            <div class="card-footer1">
+              <div class="time">
+                <div class="cloack-logo">
+                  <img
+                    src="./LatestRecipes/recipe1/clock-icon.png"
+                    alt="logo"
+                  />
+                </div>
+                <div class="minutes-time"><p>10 min</p></div>
+              </div>
+              <div class="comment">
+                <div class="comend-number"><p>7</p></div>
+                <div class="comend-logo">
+                    <a href="https://tasty.co/">
+                        <img  alt="logo" src="./LatestRecipes/recipe1/comment-icon.png">
+                        </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="card-pic">
+              <img src="./LatestRecipes/recipe3/recipe3.png" alt="logo" />
+            </div>
+            <div class="card-text">
+              <div class="recipe"><p>SAUCES</p></div>
+              <div class="recipe-name">
+                <p
+                  >Cheat’s cranberry<br />
+                  sauce</p
+                >
+              </div>
+            </div>
+            <div class="card-footer1">
+              <div class="time">
+                <div class="cloack-logo">
+                  <img
+                    src="./LatestRecipes/recipe1/clock-icon.png"
+                    alt="logo"
+                  />
+                </div>
+                <div class="minutes-time"><p>20 - 30 min</p></div>
+              </div>
+              <div class="comment">
+                <div class="comend-number"><p>12</p></div>
+                <div class="comend-logo">
+                    <a href="https://tasty.co/">
+                        <img  alt="logo" src="./LatestRecipes/recipe1/comment-icon.png">
+                        </a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-text1">
+              <div class="recipe1"><p>START COOKING</p></div>
+              <div class="recipe-name1">
+                <a href = "recipes.html">
+                  <p>
+                  Check other
+                    <br />recipes
+                 
+                </p>
+               </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recipes">
+        <div class="recipe-txt-wraper">
+          <div class="tag">
+            <p>POPULAR THIS WEEK</p>
+          </div>
+          <div class="text1">
+            <h2>Hummus with Spiced Summer<br />Squash and Lamb</h2>
+          </div>
+          <div class="text2">
+            <p
+              >If you’re making this hummus recipe for a finicky crowd, serve
+              all the toppings in<br />
+              separate bowls and let people help themselves. Lots of toasted
+              pita for scooping up<br />
+              everything is nonnegotiable.</p
+            >
+          </div>
+          <div class="ingridients-text"><p>Ingredients</p></div>
+
+          <diV class="ingridients">
+            <div class="lambs">
+              <div class="lambs-title"><p>Lamb & Assembly</p></div>
+              <div class="lambs-text">
+                <p>- 2 tsp. kosher salt</p>
+                <p> - 1½ tsp. ground coriander</p>
+                <p> - 1½ tsp. ground cumin</p>
+                <p> - ¼ tsp. crushed red pepper flakes</p>
+                <p>- 2 tsp. extra-virgin olive oil, divided</p>
+                
+              </div>
+            </div>
+            <div class="hummus">
+              <div class="hummus-title"><p>Hummus</p></div>
+              <div class="hummus-text">
+                <p> - 2 15.5-oz. cans chickpeas, rinsed</p>
+                  <p> - 1 garlic clove, coarsely chopped</p>
+                    <p>- ½ cup tahini </p>
+                      <p>- 3 Tbsp. fresh lemon juice</p>
+                        <p>- 1¼ tsp. kosher salt</p>
+                
+              </div>
+            </div>
+          </diV>
+          <div class="recipe-btn">
+            <button onclick="window.location = 'https://tasty.co/recipe/jazzy-steak-salad'"   class="go-to-recipe-btn">Read full recipe</button>
+          </div>
+        </div>
+        <div class="recipe-pic">
+          <img src="./Recipes/Layer 668.png" alt="logo" />
+        </div>
+      </div>
+      <div class="partners">
+        <div class="partner-pic"><img src="./Partners/1.png" alt="logo" /></div>
+        <div class="partner-pic"><img src="./Partners/2.png" alt="logo" /></div>
+        <div class="partner-pic"><img src="./Partners/3.png" alt="logo" /></div>
+        <div class="partner-pic"><img src="./Partners/4.png" alt="logo" /></div>
+        <div class="partner-pic"><img src="./Partners/5.png" alt="logo" /></div>
+      </div>
+<div class="footer-class">
+  <div class="footer">
+    <div class="logo-contact-wraper">
+      <div class="footer-logo">
+        <img style ="height: 7rem; width: = 7rem;" src="https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1413659156/eshiaj42iwtxgzcnpvfh.png" alt="logo" />
+      </div>
+      <div class="telephone">
+        <p>T: 1111111111 </p>
+        <p>E: contact@foodleblogger.com</p>
+      </div>
+    </div>
+
+    <div class="popular-recipes">
+            <div class="popular-recipes-title"><p>Popular Recipes</p></div>
+            <div class="popular-recipes-txt"><a href="javascript:void(0)">Beef Medalion</a>
+              <a href="javascript:void(0)">  Penne Arrabiata</a>
+              <a href="javascript:void(0)">   Sweet & Chicken</a>
+              <a href="javascript:void(0)"> Thai Chicken Curry</a>
+              <a href="javascript:void(0)">Fish Curry</a>
+                    </div>
+            </div>
+            <div class="useful-links">
+                    <div class="useful-links-title"><p>Useful Links</p></div>
+                    <div class="useful-links-txt">
+                            <a href="login.php">Login</a>
+        <a href="index.php">About Us</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="menu.php">Menu</a>
+                    </div>
+            </div>
+           
+    </div>
+    <div class="footer-copyright">
+      <p>© Copyright 2020 FoodleBlog. All rights reserved.</p>
+    </div>
+</div>
+    <script  type='text/javascript'>
+        function onTablClick(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(
+              " active",
+              ""
+            );
+          }
+          document.getElementById(tabName).style.display = "flex";
+          evt.currentTarget.className += " active";
+        }
+
+        function onSearchExpend(){
+          document.getElementById("search-bar").style.display ="block";
+          document.getElementById("search-bard-expend").style.display="block";
+          document.getElementById("main-menu1").style.display="none";
+        }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+body {
+  --screen-width: 100vw;
+  --screen-height: 100vh;
+  
+  --nav-text-color: #000000;
+  --nav-height: 50px;
+  --nav-width: 320px;
+  --nav-count: 10;
+  
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  background-color: #ffffff
+  width: var(--screen-width);
+  height: var(--screen-height);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.btn {
+  color: var(--nav-text-color);
+  font-weight: bold;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 150ms ease-out;
+}
+
+.btn-open {
+  background-color: #064086;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), 0 0 0 rgba(0, 0, 0, 0.3) inset;
+}
+
+.btn-open:active, .btn-open:focus {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3) inset;
+  transform: translateY(7px);
+}
+
+.nav-opener {
+  display: none;
+}
+
+.nav-opener:checked + .nav {
+  width: var(--screen-width);
+  height: var(--screen-height);
+  opacity: 1;
+  transition: opacity 300ms ease-out;
+}
+
+.nav {
+  width: var(--screen-width);
+  height: var(--screen-height);
+  display: grid;
+  grid-template-rows: var(--nav-height) 30% auto;
+  grid-template-columns: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 300ms ease-out, width 0ms 300ms, height 0ms 300ms;
+}
+
+.nav-header {
+  background-color:#ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: repeat(var(--nav-count), var(--nav-height));
+  grid-template-columns: 100%;
+  overflow: auto;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: var(--nav-text-color);
+  display: flex;
+  align-items: center;
+  user-select: none;
+  transition: all 150ms ease-out;
+}
+
+.nav-link label {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.nav-link:focus, .nav-link:active {
+  background-color: rgba(0, 0, 0, 0.30);
+}
+
+.nav-images {
+  display: flex;
+  flex-flow: row wrap;
+  flex-shrink: 0;
+  flex-grow: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-out;
+}
+
+#image1:checked ~ .nav-images > .nav-image {
+  transform: translateY(0);
+}
+
+#image1:checked ~ .nav-links > .nav-link:nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#image2:checked ~ .nav-images > .nav-image {
+  transform: translateY(-100%);
+}
+
+#image2:checked ~ .nav-links > .nav-link:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#image3:checked ~ .nav-images > .nav-image {
+  transform: translateY(-200%);
+}
+
+#image3:checked ~ .nav-links > .nav-link:nth-child(3) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#image4:checked ~ .nav-images > .nav-image {
+  transform: translateY(-300%);
+}
+
+#image4:checked ~ .nav-links > .nav-link:nth-child(4) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#image5:checked ~ .nav-images > .nav-image {
+  transform: translateY(-400%);
+}
+
+#image5:checked ~ .nav-links > .nav-link:nth-child(5) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#image6:checked ~ .nav-images > .nav-image {
+  transform: translateY(-500%);
+}
+
+#image6:checked ~ .nav-links > .nav-link:nth-child(6) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#image7:checked ~ .nav-images > .nav-image {
+  transform: translateY(-600%);
+}
+
+#image7:checked ~ .nav-links > .nav-link:nth-child(7) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#image8:checked ~ .nav-images > .nav-image {
+  transform: translateY(-700%);
+}
+
+#image8:checked ~ .nav-links > .nav-link:nth-child(8) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#image9:checked ~ .nav-images > .nav-image {
+  transform: translateY(-800%);
+}
+
+#image9:checked ~ .nav-links > .nav-link:nth-child(9) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#image10:checked ~ .nav-images > .nav-image {
+  transform: translateY(-900%);
+}
+
+#image10:checked ~ .nav-links > .nav-link:nth-child(10) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-title {
+  color: var(--nav-text-color);
+  font-weight: bold;
+  height: var(--nav-height);
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-nav {
+  text-align: center;
+  background-color:#ffffff;
+  width: 56px;
+}
+
+.btn-nav:active, .btn-nav:focus {
+  background-color: gold;
+  opacity: 0.8;
+}
+
+.btn-nav svg {
+  display: block;
+  vertical-align: top;
+}
+
+.btn-nav svg path {
+  stroke: #ffffff;
+  fill: #ffffff;
+}
+
+.nav-link-opener {
+  display: none;
+}
+
+.image-1 {
+  background-image:
+    linear-gradient(to bottom right, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0.5)),
+    url(https://prestigiousvenues.com/wp-content/uploads/bb-plugin/cache/Christmas-2017-The-Milestone-Hotel-Prestigious-Venues-panorama.jpg);
+}
+
+.image-2 {
+  background-image:
+    linear-gradient(to bottom right, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0.5)),
+    url(https://img.traveltriangle.com/blog/wp-content/uploads/2018/04/THE-URBAN-TERRACE.jpg);
+}
+
+.image-3 {
+  background-image:
+    linear-gradient(to bottom right, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0.5)),
+    url(https://m.hindustantimes.com/rf/image_size_444x250/HT/p2/2019/11/13/Pictures/_9ed20c22-0628-11ea-8da7-95ed4a38ab68.jpg);
+}
+
+.image-4 {
+  background-image:
+    linear-gradient(to bottom right, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0.5)),
+    url(https://media-cdn.tripadvisor.com/media/photo-s/12/37/c7/5b/interior.jpg);
+}
+
+.image-5 {
+  background-image:
+    linear-gradient(to bottom right, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0.5)),
+    url(https://www.californiahomedesign.com/wp-content/uploads/2019/04/Exterior_02_RET-1024x683.jpg);
+}
+
+.image-6 {
+  background-image:
+    linear-gradient(to bottom right, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0.5)),
+    url(https://i.pinimg.com/originals/67/3d/2d/673d2d88786342274b42c86dc32ddadc.jpg);
+}
+
+.image-7 {
+  background-image:
+    linear-gradient(to bottom right, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0.5)),
+    url(https://viewthevibe.com/wp-content/uploads/2018/11/Assemblyx100BirthdaysJamieMilne-34.jpg);
+}
+
+.image-8 {
+  background-image:
+    linear-gradient(to bottom right, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0.5)),
+    url(https://media.architecturaldigest.com/photos/5e84f6f0070535000882dcda/16:9/w_2560%2Cc_limit/GettyImages-1155054059.jpg);
+}
+
+.image-9 {
+  background-image:
+    linear-gradient(to bottom right, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0.5)),
+    url(https://i1.wp.com/private-dining.co.uk/wp-content/uploads/2020/09/Taj51_Quilon_Private_Dining_3_45366638_h.jpg?resize=520%2C397&ssl=1);
+}
+
+.image-10 {
+  background-image:
+    linear-gradient(to bottom right, rgba(255, 255, 255, 0.123), rgba(0, 0, 0, 0.5)),
+    url(https://moneyinc.com/wp-content/uploads/2018/02/Celebs.jpg);
+}
+
+.nav-search-box {
+  background-color: #328fff;
+  width: 70%;
+  height: var(--nav-height);
+  display: grid;
+  grid-template-columns: auto 90px;
+  grid-template-rows: 100%;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  overflow: hidden;
+  box-shadow: 0 12px 20px 4px rgba(40, 40, 40, 0.5);
+  border-radius: 8px;
+  transform: translateX(-50%);
+}
+
+.nav-search-box > input[type="search"],
+.nav-search-box > button {
+  font-family: inherit;
+  width: 100%;
+  height: var(--nav-height);
+  border: 0;
+  outline: 0;
+  display: block;
+}
+
+.nav-search-box > input[type="search"] {
+  background-color: #dedede;
+  padding: 0 15px;
+  transition: all 150ms ease-out;
+}
+
+.nav-search-box > input[type="search"]:focus {
+  background-color: #ffffff;
+}
+
+.nav-search-box > button {
+  color: var(--nav-text-color);
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 150ms ease-out;
+}
+
+.nav-search-box > button:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.nav-search-box > button:active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .nav {
+    grid-template-rows: var(--nav-height) auto;
+    grid-template-columns: var(--nav-width) auto;
+  }
+  
+  .nav-header {
+    grid-column-start: span 2;
+  }
+}
+
+
+
+
+.exampleScrollMain {
+ 
+ 
+    border: 0px dotted black;
+    overflow-y: scroll; /* Add the ability to scroll */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .exampleScrollMain::-webkit-scrollbar {
+      display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .exampleScrollMain {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+   
+  
+  
+  
+  
+  
+  
+  
+  
